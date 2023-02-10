@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -21,7 +21,24 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'user_data_id'
     ];
+
+    public function isAdmin()
+    {
+        return $this->admin;
+    }
+
+    public function favBooks()
+    {
+        return $this->hasMany(FavBook::class);
+    }
+
+
+    public function userData()
+    {
+        return $this->hasOne(UserData::class, 'user_id');
+    }
 
     /**
      * The attributes that should be hidden for serialization.
