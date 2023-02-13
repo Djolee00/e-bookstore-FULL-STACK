@@ -1,0 +1,113 @@
+.all-books-page{
+    background-color: rgb(218, 210, 133);
+  }
+  
+  .all-books {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      margin-left: 50px;
+    }
+    
+    .book {
+      text-align: center;
+      border-style: solid;
+      border-width: 4px;
+      border-color: rgb(33, 37, 41);
+      border-radius: 10px;
+      margin: 10px;
+      height: 440px;
+      width: 250px;
+      background-color:rgb(33, 37, 41);
+    }
+    
+    .book-body {
+      text-align: center;
+      color:white;
+    }
+    .book-img-top {
+      border-radius: 10px;
+      height: 150px;
+      border-style: solid;
+      border-color: white;
+      
+    }
+  
+    .link {
+      color: white;
+      padding-top: 10px;
+      display: block;
+    }
+  
+  
+  
+    .book-author{
+      margin-top: 30px;
+    }
+  
+    .book-price{
+      display: inline;
+      margin-right: 5px;
+    }
+  
+    .book-button{
+      background-color: transparent;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 10px;
+      
+    }
+
+    .currency-button{
+      border-style: inherit;
+      border-radius: 20px;
+      text-align: center;
+      font-size: large;
+    }
+
+    .quantity{
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 50px;
+    }
+
+    .button-section{
+      text-align: center;
+    }
+
+    .filters-position{
+      display: flex;
+    }
+
+    .filters-section{
+      display: flex;
+      margin: auto;
+    }
+
+  
+
+    .col{
+      text-align: left;
+      padding-left: 50px;
+    }
+
+    .heading{
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 900px){
+      .filters-section{
+        display: block;
+        text-align: center;
+      }
+      .col{
+        text-align: left;
+        padding-left: 80px;
+      }
+    } 

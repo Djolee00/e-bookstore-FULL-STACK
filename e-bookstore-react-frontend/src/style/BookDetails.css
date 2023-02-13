@@ -1,0 +1,24 @@
+.background {
+  background-color: rgb(218, 210, 133);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.title {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.details-img {
+  height: 450px;
+  width: auto;
+}
+
+p {
+  margin-left: 0;
+}
+
+.pb-5 {
+  padding-bottom: 0 !important;
+}
