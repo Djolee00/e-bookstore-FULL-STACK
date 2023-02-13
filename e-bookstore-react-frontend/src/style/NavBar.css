@@ -1,0 +1,21 @@
+.nav-link{
+    
+font-size: large;
+}
+
+.nav-item{
+    padding-left: 5px;
+}
+
+#responsive{
+    padding-left: 45rem;
+}
+
+@media (max-width: 900px) {
+    ul{
+       text-align: center; 
+    }
+    #responsive{
+        padding-left: 0;
+    }
+}
